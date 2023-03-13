@@ -12,8 +12,8 @@ class InteractiveCalculator
     end
 end
 
-interactive_calculator = InteractiveCalculator.new(Kernel)
-interactive_calculator.run
+# interactive_calculator = InteractiveCalculator.new(Kernel)
+# interactive_calculator.run
 
 # Hello. I will subtract two numbers.
 # Please enter a number
