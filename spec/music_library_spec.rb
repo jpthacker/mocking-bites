@@ -21,7 +21,7 @@ RSpec.describe MusicLibrary do
             music_library = MusicLibrary.new
             fake_track_1 = double :fake_track
             expect(fake_track_1).to receive(:matches?).with("Blood").and_return(false)
-            fake_track_2 = double :fake_track, matches?: true
+            fake_track_2 = double :fake_track
             expect(fake_track_2).to receive(:matches?).with("Blood").and_return(true)
             music_library.add(fake_track_1)
             music_library.add(fake_track_2)
