@@ -3,15 +3,14 @@ require "json"
 require "net/http"
 
 class TimeError
-  def initialize(requester, comp_time)
+  def initialize(requester)
     @requester = requester
-    @comp_time = comp_time
   end
 
   # Returns difference in seconds between server time
   # and the time on this computer
-  def error
-    return get_server_time - @comp_time
+  def error(comp_time)
+    return get_server_time - comp_time
   end
 
   private
